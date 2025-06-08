@@ -1,0 +1,78 @@
+/* Ensuring page fills the screen */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #eaefef;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #2c2c2c;
+  background: none;
+  box-shadow: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+}
+
+.outer-div {
+  position: absolute;
+  left: 50%;
+  top: 120px;
+  transform: translateX(-50%);
+  background-color: #b8cfce;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 475px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.outer-div:hover {
+  transform: translateX(-50%) scale(1.05);
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Styling inputs and buttons */
+.outer-div input,
+.outer-div button {
+  width: 60%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #7f8caa;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.outer-div button {
+  background-color: #7f8caa;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+  width: 30%;
+  display: block;
+  margin: 10px auto;
+}
+
+.outer-div button:hover {
+  background-color: #333446;
+}
+
+/* Styling the message if present */
+.outer-div p {
+  margin-top: 15px;
+  color: #333446;
+  font-weight: bold;
+}
+
+/* css to increase gap between two form elements */
+.outer-div form + form {
+  margin-top: 20px;
+}
